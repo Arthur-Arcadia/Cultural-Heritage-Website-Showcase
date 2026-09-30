@@ -1,7 +1,7 @@
 @import url("../component_skeletons/button.css");
 
 body {
-    background-image: url("/images/background/Background-showcase.png");
+    background-image: url("../../images/background/Background-showcase.png");
 }
 
 .content-box{

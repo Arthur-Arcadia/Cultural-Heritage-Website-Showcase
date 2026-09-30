@@ -3,7 +3,7 @@
 @import url("../component_skeletons/footer.css");
 
 body {
-    background-image: url("/images/background/Background-home.png");
+    background-image: url("../../images/background/Background-home.png");
 }
 
 .login {
