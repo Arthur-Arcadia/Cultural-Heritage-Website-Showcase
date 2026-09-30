@@ -1,0 +1,68 @@
+.button-primary{
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 10px, auto;
+    padding: 15px;
+    color: var(--color-primary-text);
+    background-color: var(--color-primary);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.button-primary:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 1); 
+    color: var(--color-gold);
+    text-shadow: 2px 2px 2px black;
+}
+
+.button-primary.pressed {
+    transform: scale(1.05);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.6);
+    color: var(--color-background);
+    transition: transform 0.05s ease, box-shadow 0.1s ease, color 0.1s ease;
+}
+
+
+.button-secondary{
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 10px auto;
+    padding: 15px;
+    color: var(--color-secondary-text);
+    background-color: var(--color-secondary);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.button-secondary:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 1); 
+    color: var(--color-secondary-light);
+    text-shadow: 2px 2px 2px rgb(160, 183, 219);
+}
+
+.button-secondary.pressed {
+    transform: scale(1.05);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.6);
+    color: var(--color-primary);
+    transition: transform 0.05s ease, box-shadow 0.1s ease, color 0.1s ease;
+}
+
+@media (max-width: 768px) {
+    .button-primary{
+        padding: 10px;
+        font-size: 1rem;
+        margin: 3% auto;
+    }
+
+    .button-secondary{
+        padding: 5px;
+        font-size: 1rem;
+        margin: 3% auto;
+    }
+}

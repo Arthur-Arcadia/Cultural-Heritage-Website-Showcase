@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Forum - Cultural Heritage</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/page_css/forum.css">
+</head>
+
+<body>
+    <main>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <nav id="nav-desktop" aria-label="Main Navigation">
+            <ul>
+                <img src="./images/favicon.ico">
+                <li><a href="home.html"
+                        aria-label="Homepage">Homepage</a></li>
+                <li><a href="digital_museum.html"
+                        aria-label="Digital Museum">Digital
+                        Museum</a></li>
+                <li><a href="interactive_map.html"
+                        aria-label="Interactive Map">Interactive
+                        Map</a></li>
+                <li><a href="forum.html"
+                        aria-label="Community">Community</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="nav-mobile" aria-label="Main Navigation">
+            <ul>
+                <li><a href="home.html"><img src="./images/nav_icon/home.png"
+                            class="icon" alt="Homepage icon"
+                            aria-label="Click to view the homepage"></img></a></li>
+                <li><a href="digital_museum.html"><img
+                            src="./images/nav_icon/museum.png" class="icon"
+                            alt="Museum page icon"
+                            aria-label="Click to view the museum page"></a>
+                </li>
+                <li><a href="interactive_map.html"><img
+                            src="./images/nav_icon/map.png" class="icon"
+                            alt="Map page icon"
+                            aria-label="Click to view the map page"></a></li>
+                <li><a href="forum.html"><img src="./images/nav_icon/chat.png"
+                            class="icon" alt="forum page icon"
+                            aria-label="Click to view the community page"></a></li>
+            </ul>
+        </nav>
+
+        <div class="container" id="main-content">
+            <header>
+                <h1 class="page-title">Cultural Voices Forum</h1>
+            </header>
+            
+            <p class="hero-text">Engage in conversations on any cultural community you prefer.</p>
+
+            <div class="form-section">
+                <div class="form-container">
+                    <form id="chat-form">
+                        <input type="text" name="person_name"
+                            placeholder="Your Name" required>
+                        <input type="text" name="chat_post_title"
+                            placeholder="Post Title" required>
+                        <textarea name="chat_post_content"
+                            placeholder="Type your message here..."
+                            required></textarea>
+                        <button type="submit" class="button-primary">Submit</button>
+                        <div id="form-feedback"></div>
+                    </form>
+                </div>
+                    
+                <div class="form-description">
+                    <h3>Welcome to the Community!</h3>
+                    <p>
+                        You can share your thoughts, your ideas, and whatever you
+                        like to enrich the content.
+                    </p>
+                    <p>
+                        This community is committed to promoting and sharing
+                        cultural heritage, each of your post will become the 
+                        foundation of the whole community. 
+                    </p>
+                    <p>
+                        Check out our newest post below.
+                    </p>
+                    <h4 class="hero-text">Recent Discussions</h4>
+                    <div id="chat-container">
+                        <!-- Messages dynamically inserted here -->
+                    </div>
+                    <button id="refresh-btn" class="button-secondary">🔄 Refresh Messages</button>
+                </div>
+            </div>
+
+
+            <hr style="margin: 30px 0; border-color: var(--color-gold);">
+
+            <section class="event-section">
+                <h3 class="forum-title">Upcoming Cultural Events</h3>
+                <div class="event-preview">
+                    <h4 class="forum-title">Silk Road Storytelling Night</h4>
+                    <p><strong>Location:</strong> Dunhuang Community Hall</p>
+                    <p><strong>Organiser:</strong> West China Culture Assoc.</p>
+                    <p><strong>Type:</strong> Festival</p>
+                    <p><strong>Date & Time:</strong> 2025-07-15 19:00</p>
+                    <p><em>Experience ancient tales of the Mogao Caves told by local
+                            artists and historians.</em></p>
+                    <img src="./images/exhibition/silkroad.jpg"
+                        alt="Silk Road Storytelling Night"
+                        style="max-width: 80%; border-radius: 12px; margin: 10px auto;">
+                </div>
+            </section>
+
+            <hr style="margin: 30px 0; border-color: var(--color-gold);">
+
+            <section class="event-section">
+                <h3 class="forum-title">Featured Artisan Products</h3>
+                <div class="event-preview">
+                    <h4 class="forum-title">Sanxingdui Gold Mask Replica</h4>
+                    <p><strong>By:</strong> Chengdu Heritage Studio</p>
+                    <p><strong>Description:</strong> A detailed handcrafted gold
+                        mask, inspired by the Sanxingdui archaeological finds.</p>
+                    <p><strong>Info:</strong> Limited edition | Bronze-gold alloy |
+                        Certificate included</p>
+                    <img src="./images/exhibition/goldmasks.jpg" alt="Sanxingdui Mask Replica"
+                        style="max-width: 75%; border-radius: 12px; margin: 10px auto;">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <h2>Digital Culture Expo</h2>
+                <p>Exploring the digital future of the history.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>CONTENT</h4>
+                    <ul>
+                        <li><a href="./home.html"
+                                aria-label="Home">Home</a>
+                        </li>
+                        <li><a href="./digital_museum.html"
+                                aria-label="Digital Museum">Digital
+                                Museum</a>
+                        </li>
+                        <li><a href="./interactive_map.html"
+                                aria-label="Interactive Map">Interactive
+                                Map</a>
+                        </li>
+                        <li><a href="./forum.html"
+                                aria-label="Community">Community</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>TOOLS</h4>
+                    <ul>
+                        <li><a href="#">Navigation</a></li>
+                        <li><a href="#">Timeline</a></li>
+                        <li><a href="#">Report</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">User Index</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-social">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="./images/icons/facebook.png"
+                            alt="icon for Facebook"></a>
+                    <a href="#"><img src="./images/icons/instagram.png"
+                            alt="icon for Instagram"></a>
+                    <a href="#"><img src="./images/icons/pinterest.png"
+                            alt="icon for Pinterest"></a>
+                    <a href="#"><img src="./images/icons/youtube.png"
+                            alt="icon for YouTube"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025 Digital Culture Expo. All rights reserved.
+            </p>
+            <div class="footer-language">
+                <label for="lang-select">Language:</label>
+                <select id="lang-select">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="js/forum.js"></script>
+</body>
+
+</html>

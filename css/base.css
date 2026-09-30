@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&family=Are+You+Serious&family=Berkshire+Swash&family=Bilbo+Swash+Caps&family=Bungee+Shade&family=Fredericka+the+Great&family=Merienda:wght@300..900&family=Mystery+Quest&family=Norican&family=Rubik+Glitch&family=Rubik+Glitch+Pop&family=Ruthie&family=Rye&family=Shojumaru&family=Sorts+Mill+Goudy:ital@0;1&family=Tilt+Prism&family=Turret+Road:wght@200;300;400;500;700;800&display=swap'); 
+:root{
+    --color-primary:#19466e;
+    --color-primary-light:rgba(30, 41, 122, 0.813);
+    --color-primary-text:goldenrod;
+    --color-transparent:rgba(255, 255, 255, 0.712); 
+    --color-secondary:#dfe2a5;
+    --color-secondary-highlight:#e2e3c5d9;
+    --color-secondary-text:#0247c7e1;
+    --color-secondary-light:#3a5ea1e1;
+    --color-gold:gold;
+    --color-violet:indigo;
+    --color-background: rgb(223, 223, 223);
+
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --spacing-5: 32px;
+    --spacing-6: 40px;
+    --spacing-7: 48px;
+    --spacing-8: 56px;
+}
+
+.container {
+    height: 100%;
+    /* Full viewport height */
+    width: 90%;
+    /* 80% of the viewport height */
+    margin: 5% auto;
+    /* Center the container */
+    background-color:var(--color-transparent);
+    /* Background color */
+    display: grid;
+    padding: 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);  
+}  
+
+body {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--color-primary-text);
+}
+
+h1{
+    font-family: "Berkshire Swash", serif;
+    font-size: 6.86rem;
+    font-weight: 100;
+}
+
+h2{
+    font-family: "Merienda", cursive;
+    font-size: 4.2rem;
+    font-weight: 900;
+    color: var(--color-secondary-text);
+}
+
+h3{
+    font-family: "Merienda", cursive;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--color-secondary-light);
+}
+
+h4{
+    font-family: "Merienda", cursive;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-secondary-light);
+}
+
+p{
+    font-family: "Sorts Mill Goudy", serif;;
+    font-size: 1.3rem;
+    color: var(--color-secondary-light);
+    text-align: left;
+    margin: 10px 40px;
+    line-height: 30px;
+}
+
+.hero-text{
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700; 
+    margin: 10px 40px;  
+    text-shadow: 1px 1px 1px black;
+}
+
+.page-title{
+    text-align: left;
+    margin: 10px;
+    text-shadow: 2px 2px 2px var(--color-primary);
+    font-weight: 900;
+    line-height: 110%;
+}
+
+@media (max-width:768px){
+
+    .container {
+        width: 80vw;
+        /* 60% viewport width */
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    h1{
+        font-size: 17vw;
+        margin: 0;
+    }
+
+    h2{
+        font-size: 10vw;
+    }
+
+    h3{
+        font-size:8vw;
+    }
+
+    h4{
+        font-size: 6.5vw;
+    }
+
+    p{
+        font-size: 2vh;
+        margin: 20px 40px;
+    }
+
+    .page-title{
+        text-align: left;
+        margin:50px 0;
+    }
+    
+    .hero-text{
+        text-align: center;
+        font-size: 2vh;
+        font-weight: 900;
+        margin: 20px 40px;
+    }
+}

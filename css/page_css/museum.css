@@ -1,0 +1,156 @@
+@import url("../component_skeletons/button.css");
+@import url("../component_skeletons/image_modal.css");
+@import url("../component_skeletons/footer.css");
+
+body {
+    background-image: url("/images/background/Background-museum.png");
+}
+
+.museum-wrapper {
+    padding: var(--spacing-4);
+    background-color: var(--color-transparent);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.museum-tabs {
+    display: flex;
+    justify-content: center;
+    margin: var(--spacing-3) 0;
+    gap: var(--spacing-3);
+}
+
+.tab-button {
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 10px, auto;
+    padding: 15px;
+    color: var(--color-primary-text);
+    background-color: var(--color-primary);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.tab-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 1);
+    color: var(--color-gold);
+    text-shadow: 2px 2px 2px black;
+}
+
+.tab-button.pressed {
+    transform: scale(1.05);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.6);
+    color: var(--color-background);
+    transition: transform 0.05s ease, box-shadow 0.1s ease, color 0.1s ease;
+}
+
+.tab-button.active {
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: var(--color-secondary-text);
+    background-color: var(--color-secondary);
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.museum-content {
+    display: block;
+}
+
+.museum-content.hidden {
+    display: none;
+}
+
+.exhibit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+    padding: var(--spacing-3);
+}
+
+.exhibit-card {
+    background-color: var(--color-background);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.exhibit-card img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.exhibit-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 1); 
+}
+
+.exhibit-info {
+    padding: 10px 15px;
+}
+
+@media (max-width: 768px) {
+    .exhibit-grid {
+        grid-template-columns: 1fr;
+    }
+    .museum-wrapper {
+        padding: var(--spacing-2);
+        border-radius: 10px;
+    }
+
+    .museum-tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-2);
+    }
+
+    .tab-button {
+        width: 80%;
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .exhibit-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+    }
+
+    .exhibit-card {
+        width: 100%;
+        font-size: 0.95rem;
+        padding-bottom: 8px;
+    }
+
+    .exhibit-info h4 {
+        font-size: 1.1rem;
+    }
+
+    .exhibit-info p {
+        font-size: 0.9rem;
+    }
+
+    .exhibit-card img {
+        width: 100%;
+        height: auto;
+    }
+
+}

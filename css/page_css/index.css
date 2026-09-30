@@ -1,0 +1,6 @@
+@import url("../component_skeletons/flipping_card.css");
+@import url("../component_skeletons/button.css");
+
+body{
+    background-image: url("/images/background/Background-index.png");
+}

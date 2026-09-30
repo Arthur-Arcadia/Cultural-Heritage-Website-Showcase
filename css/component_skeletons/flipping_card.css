@@ -1,0 +1,117 @@
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-container {
+    perspective: 1000px;
+    width: 27%;
+    height: 580px;
+    margin: 40px 0;
+}
+
+
+.card-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700; 
+    margin: 10px 15px; 
+    padding: 0;
+    color:var(--color-darkgreen);
+    text-shadow: 1px 1px 1px black;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.front {
+    background-color: white;
+}
+
+.back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 3.0rem;
+    font-weight: 600;
+    text-shadow: 5px 5px 5px black;
+}
+
+.card-content {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .card-container{
+        width: 70%;
+        height: 30vh;
+    }
+
+    .card-image{
+        font-size: 100%;
+    }
+
+    .card-grid{
+        padding-bottom: 80px;
+    }
+}

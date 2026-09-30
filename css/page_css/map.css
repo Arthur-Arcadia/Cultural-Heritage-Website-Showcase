@@ -1,0 +1,91 @@
+@import url("../component_skeletons/footer.css");
+
+body {
+    background-image: url("/images/background/Background-map.png");
+}
+
+.china-map {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-marker {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    background-image: url('/work_phase_4/images/exhibition/marker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.map-marker:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.popup-below {
+    position: absolute;
+    top: 6vh;
+    left: 50%;
+    width: 30vw;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.popup-below h3 {
+    text-align: left;
+    margin: 10px;
+    font-weight: 900;
+    color: var(--color-primary-text);
+}
+
+.popup-below p {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 700; 
+    margin: 10px 40px;  
+    text-shadow: 1px 1px 1px black;
+    color: var(--color-primary-text);
+}
+
+.popup-below .learn-more {
+    display: inline-block;
+    margin-top: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    font-style: italic;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.popup-below .learn-more:hover {
+    background-color: #004c99;
+}
